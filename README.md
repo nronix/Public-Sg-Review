@@ -31,6 +31,12 @@ example
 python main.py -sgs aba -region ap-south-1 -out filename 
 ```
 
+Start a webserver for the UI files inside ui/web folder
+
+```
+python -m http.server 8000
+navigate to http://localhost:8000?view=filename
+```
 
 
 ## Demo
