@@ -1,38 +1,40 @@
-Public exposure Review
 
-How to get Started
+# Public Expsoure Review
 
-prerequisite
+A Helpfull utility to create interactive visualization of the AWS Infrastructure exposed to public internet. 
 
-aws access env variable should be set or aws cli is configured
-python 3.X should be present
 
-Steps
 
-git clone <>
 
-python -m pip install -r requirements.txt or 
-pip install -r requirements.txt
+## Installation
 
-Usage
+Python Required
+
+```bash
+  git clone https://github.com/nronix/Public-Sg-Review.git
+  cd Public-Sg-Review
+  python -m pip install -r requirements.txt
+```
+    
+## Documentation
 
 usage: main.py [-h] [-sgs SGS] [-region REGION]
 
-options:
-  -h, --help      show this help message and exit
-  -sgs SGS        sg-isdgfd,sg-sdgdsfg
-  -region REGION  us-east-1
+options: 
+-h, --help show this help message and exit
+-sgs SGS sg-isdgfd,sg-sdgdsfg 
+-region REGION us-east-1
+-out filename
 
-example 
-
-python main.py -sgs sg-isdgfd,sg-sdgdsfg -region us-east-1
-
-
-
-Note: First run on a day may take time as it will fetch all the data and cache on filesystem 
+example  
+``` 
+python main.py -sgs aba -region ap-south-1 -out filename 
+```
 
 
-Ideas
 
+## Demo
+
+![image](https://github.com/nronix/Public-Sg-Review/assets/22999507/cf3155bf-dd9d-4fc0-98de-b5cf813c87c0)
 
 
